@@ -1,0 +1,314 @@
+%
+% CV-Adam_Endrodi.tex
+%
+\documentclass[a4paper,12pt]{article}
+\usepackage[american]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{calc}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{afterpage}
+\usepackage{ulem}
+
+\geometry{%showframe,
+	nohead,footskip=4ex,
+	hmargin=0.75cm,
+	vmargin=1cm}
+
+\pagestyle{fancy}
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{}\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+\titleformat{\section}%
+	{\vspace{-2ex}\large}%
+	{\thesection.}%
+	{.5em}%
+	{}%
+	[\titlerule\vspace{2pt}\titlerule]
+
+\setlength\parindent{0mm}
+\setlength\parskip{0pt}
+\setlength\multicolsep{0ex}
+\newcommand\Yell{\textbf}
+\newcommand\Catch{\textbf}
+\newcommand\Label{\textsf}
+
+\newcommand{\compress}{\setlength\itemsep{-\parskip}}
+\newcommand{\midline}{\rule[0.5ex]{\linewidth-\parindent}{.5pt}}
+\newcommand\Hungarian{\foreignlanguage{magyar}}
+
+\newcommand\listcompress{%
+	\setlength\labelwidth{2em}
+	\setlength\leftmargin{\labelwidth+\labelsep}
+	\setlength\topsep{0mm}
+	\setlength\itemsep{0mm}
+	\setlength\parsep{0mm}}
+
+\begin{document}
+
+\section{Goal}
+
+I'm interested in full-time employment in \Yell{Linux} environment
+as a software engineer developing in \Yell{C} and \Yell{C++}.
+
+\section{Personal information}
+
+\begin{tabularx}{\linewidth}{lXll}
+Name			&& Endr\H{o}di, \'Ad\'am	&			\\
+Phone			&& \sout{+36XX XXXX XXX}	&			\\
+E-mail			&& \sout{XXX@XXXX.hu}		&			\\
+Nationality		&& Hungarian			&			\\
+Education		&& master of engineering in information technology, &	\\
+			&& graduated at the University of Pannonia, Hungary &	\\
+Specialization		&& telecommunication		&			\\
+Language skills		&& advanced level English	&			\\
+LinkedIn profile	&& \url{http://www.linkedin.com/pub/adam-endrodi/65/10/34}
+			 & \includegraphics*[bb=0 0 72 1,clip=false]{me_2012}	\\
+\end{tabularx}
+
+\section{Strengths}
+
+\begin{itemize}\compress
+\item	life cycle- and process-wide understanding of software engineering
+\item	11 years of Perl, 9 of C++, 10+ of C, Unix and specifically Linux
+\item	experience in a variety of domains of information technology
+\item	high level scripting and automation
+\item	testing, tracing, profiling, debugging
+\item	emphasis on quality, reliability and maintainability
+\end{itemize}
+
+\section{Past projects}
+
+For four years I worked onsite at Nokia Corp.'s R\&D facilities in Helsinki,
+Finland, on the middleware of the resource-constrained environment of the
+\Yell{Linux}-based Nokia N900 and N9 smartphones.  After that I joined
+BalaBit IT Security as level-3 support engineer, where I responded to
+customer problems about the products of the company (application level
+proxies and auditing software) and fixing bugs in them.  Currently I'm
+employed at Nokia Siemens Networks as senior software engineer.  My
+current project is building a \href{http://tools.ietf.org/html/rfc6733}%
+{DIAMETER} (successor of the \href{http://tools.ietf.org/html/rfc2865}%
+{RADIUS} protocol) load balancer on Linux for the Nokia NVS.
+
+\midline\par
+\Label{Project name}: \texttt{mcompositor}\hfill
+\Label{2010 Sept -- 2011 Sept}\par
+\Label{Description}: Development of the composition and window manager of N9
+(Harmattan program).  This software is responsible for the user-interaction
+of the top-level UI elements, and also coordinates between the different
+applications and background services.  Its performance and reliability is
+critical in the device's user experience.  It is written in \Yell{C++} with
+the \Yell{Qt} toolkit and \Yell{OpenGL} backend, and the development was
+managed via \Yell{scrum}.  It has \Yell{automated functional tests} written in
+\Yell{Python}.\par
+\Label{Duties}: feature enhancements, user-interaction improvements,
+debugging internal problems, debugging software interaction problems,
+optimization, refactoring.  For a while I was responsible for releasing
+the software for system integration, ensuring that outstanding issues
+are fixed in the release.  I also worked with the \Yell{Toolkit} and
+\Yell{Graphical adaptation} teams when necessity arose.
+
+\midline\par
+\Label{Project name}: \texttt{hildon-desktop}\hfill
+\Label{2008 Sept -- 2010 Aug}\par
+\Label{Description}: This was the predecessor of \texttt{mcompositor},
+developed for the N900 (Fremantle program).  It used different technologies
+(written in \Yell{C} and \Yell{Clutter}, the high-level \Yell{OpenGL}
+library), and had more sub-components, many of which I was involved with
+too (eg. SDL).\par
+\Label{Duties}: I wrote the \Yell{task switcher}, implemented the
+\Yell{portrait mode}, worked on the desktop notifications and on
+the visual transitions of GUI elements.  I maintained a friendly and
+bidirectional contact with our UI designers.  During both this and
+the \texttt{mcompositor} projects I wrote many \Yell{automated tests}
+for specific, hard to reproduce bugs which helped their resolution.
+I also created many other \Yell{development tools}, which were useful
+in generic bug reproduction, bugfixing and in profiling.
+
+\newpage
+\midline\par
+\Label{Project name}: Media Applications Framework (MAFW)\hfill
+\Label{2007 Aug -- 2008 Aug}\par
+\Label{Description}: Middleware for multimedia applications on the N900.
+It provided an abstraction layer between the application and the various
+content and metadata sources (eg. local file system) and playback devices
+(eg. \Yell{UPnP} or \Yell{gstreamer}).  It was written in \Yell{C} and was
+based on \Yell{GObject}.  For extensibility it used plugins, and for
+testability it had \Yell{Python bindings}.\par
+\Label{Duties}: \Yell{reviewed} the predecessor Multimedia Application's
+as well as MAFW's pilot implementation and \Yell{compiled a report} of
+questions and suggestions, conducted the \Yell{security threat analysis}
+of MAFW, worked on the \Yell{Python modules}, on the \Yell{D-BUS message
+passing} layer, and on the \Yell{SQLite} access functions.  Also I introduced
+\Yell{continuous integration} into the project with a heavily tailored
+\Yell{buildbot} installation.
+
+\midline\par
+\Label{Project name}: \texttt{MenuGene}\hfill
+\Label{2004 -- 2009}\par
+\Label{Description}: Computer aided nutrition counseling system for
+experts and for the laymen.  This was a research project at the University
+of Pannonia, and extended to other academic institutions.\par
+\Label{Duties}: As the main software developer, I wrote the foundation
+libraries including the \Yell{genetic algorithm solver} engine, and the
+service programs in \Yell{C++}.  In addition I created user interfaces
+and \Yell{development tools} in \Yell{C}, \Yell{Perl} and \Yell{PHP}.
+Initially the program was developed for \Yell{Linux}, and later I ported
+the service to \Yell{Windows}.  I also redesigned the data store's \Yell{SQL}
+schema and migrated it from Oracle to \Yell{PostgreSQL}.
+
+\midline\par
+\Label{Project name}: \texttt{qbot}\hfill
+\Label{2005 -- 2007}\par
+\Label{Description}: Automated testing and student evaluation service for a
+course on computer networking at the University of Pannonia.  The students
+uploaded their C programs, which the service executed in a \texttt{qemu}
+\Yell{virtual machine}, and were \Yell{stress-tested} with \Yell{randomized},
+\Yell{fuzzy} input, to which the test program had to behave as specified in
+the assignment.  The service had a web interface through which teachers could
+supervise everyone's activity, students could manage their uploads and observe
+the interaction between theirs and the test program.\par
+\Label{Duties}: I designed and implemented the system from the ground up mostly
+in \Yell{Perl} and \Yell{Perl XS}, and wrote many assignments (each of which
+requiring a different tester program).
+
+\midline\par
+\Label{Project name}: system administration at the Central Student's Hostel
+of the Univ. of Pannonia\hfill
+\Label{2003 -- 2005}\par
+\Label{Description}: The Hostel's computer network was comprised of several
+servers, hundreds of client machines and dozens of interconnecting devices.
+It offered \Yell{shell}, \Yell{www}, \Yell{ftp}, \Yell{mail} access and spam
+filtering services to the students, and functioned as a \Yell{gateway} to
+the University network and to the Internet.  All services acquired the user
+information from a central \Yell{LDAP} directory.  Special emphasis was put on
+\Yell{security}, \Yell{availability} and \Yell{reliability}.\par
+\Label{Duties}: Together with my colleague we thoroughly redesigned the entire
+outdated infrastructure we had inherited to meet our quality criteria, and
+after that we monitored and maintained it 7/24.  My most remarkable individual
+project was the completely reworked and \Yell{integrated registration and
+gate-keeper system}, which we used at the receptions and as an administrator's
+console.
+
+\midline\par
+\Label{Project name}: Information security in the face of Internet attacks\hfill
+\Label{2002 -- 2003}\par
+\Label{Description}: Government-supported project of the Budapest University
+of Technology and Economics (BME) to assess the then-widespread threats of
+the Internet based on collected sensor data (eg. firewall logs) and
+to analyse their potential impact.\par
+\Label{Duties}: I wrote the programs which \Yell{created surveys} of
+the collected data and provided \Yell{consultancy on technical matters}
+helping revealing significant findings in the study.
+
+\section{Keywords}
+
+\begin{multicols}{2}
+\begin{itemize}\compress
+\item	C, C++, assembly, ELF, yacc, \TeX
+\item	Perl, Perl XS, Python, Python-C
+\item	regexps, advanced shell scripting
+\item	SQL, PostgreSQL, SQLite
+\item	glib, Qt, D-BUS, OpenSSL, X11
+\columnbreak
+\item	gcc, gdb, autotools, Debian packaging
+\item	XML, web services, genetic algorithms
+\item	scrum, git, Subversion, Bugzilla
+\item	IPv4, SCTP, routing, firewalls, ssh
+\item	DNS, LDAP, HTTP, FTP, SIP, mailing 
+\end{itemize}
+\end{multicols}
+
+\section{Experience}
+
+% efficient interpretation of standards and references
+\begin{multicols}{3}
+\begin{list}{$\bullet$}{\listcompress}
+\item	Unix systems programming
+\item	kernel programming
+\item	network programming
+\item	information security
+\item	safe and secure coding
+\item	secure system administration
+\item	database administration
+\end{list}
+\columnbreak
+\begin{list}{$\bullet$}{\listcompress}
+\item	creating development tools
+\item	developing parsers/interpreters
+\item	understanding of the C toolchain \& dynamic linkage
+\item	tracing, profiling, automated testing
+\item	constrained environments
+\end{list}
+\columnbreak
+\begin{list}{$\bullet$}{\listcompress}
+\item	portability
+\item	concurrency and reentrancy
+\item	interprocess communication
+\item	virtual machines
+\item	writing accurate yet readable \\
+	technical documentation
+\item	high quality typesetting
+\end{list}
+\end{multicols}
+
+\section{Personal properties}
+
+% not anxious about changing something
+\begin{multicols}{2}
+\begin{itemize}\compress
+\item	appreciates order and tidiness
+\item	prizes code reliability high
+\item	respects his fellows' code and decisions
+\item	thinks ahead
+\item	always tests before deployment
+\columnbreak
+\item	patient
+\item	empathic
+\item	willing to learn
+\item	doesn't like giving up
+\item	motivated by fun
+\end{itemize}
+\end{multicols}
+
+\section{Personal interests}
+
+I'm interested in experimental psychology, social issues and especially
+in the gender problem.
+
+\section{Code repositories}
+
+\begin{itemize}\compress
+\item	\url{http://github.com/enadam} (personal repository of own projects)
+\item	\url{http://meego.gitorious.org/meegotouch/meegotouch-compositor}
+\item	\url{http://maemo.gitorious.org/fremantle-hildon-desktop/hildon-desktop}
+\end{itemize}
+
+\section{Employers and contractors}
+
+\begin{itemize}\compress
+\item	Nokia Siemens Networks
+\item	BalaBit IT Security, the producers of \texttt{syslog-ng}
+	and the \texttt{Zorp} firewall (\url{http://balabit.com})
+\item	Collabora Ltd., the Open Source company (\url{http://www.collabora.com})
+\item	Nokia Corp., Maemo Software and Meego Devices
+\item	Blum Software Engineering LLC (\url{http://www.blumsoft.eu/en})
+\item	Department of Electrical Engineering and Information Systems,
+	University of Pannonia, Hungary
+	(\url{http://virt.uni-pannon.hu/index.php/in-english})
+\item	Department of Measurement and Information Systems,
+	Budapest University of Technology and Economics, Hungary
+	(\url{http://www.mit.bme.hu/eng})
+\end{itemize}
+
+\center\itshape\today
+
+\end{document}
+
+% End of CV-Adam_Endrodi.tex
