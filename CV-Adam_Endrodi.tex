@@ -26,11 +26,16 @@
 \renewcommand{\headrulewidth}{0pt}
 
 \titleformat{\section}%
-	{\vspace{-2ex}\large}%
+	{\vspace{-1ex}\large}%
 	{\thesection.}%
 	{.5em}%
 	{}%
 	[\titlerule\vspace{2pt}\titlerule]
+\titleformat{\subsection}%
+	{\vspace{-1ex}\large\bf}%
+	{}%
+	{}%
+	{}%
 
 \setlength\parindent{0mm}
 \setlength\parskip{0pt}
@@ -56,244 +61,191 @@
 
 \section{Goal}
 
-I'm interested in software development jobs for \Yell{Linux} either in
-the usual or in less mainstream languages.
+I'm interested in all kinds of \Yell{Linux} jobs as long as it involves
+coding in the usual or in less common languages.
 
 \section{Personal Information}
 
 \begin{tabularx}{\linewidth}{lXll}
-Name			&& Endr\H{o}di, \'Ad\'am			& \\
+Name			&& Adam Endrodi (born Endr\H{o}di \'Ad\'am)		& \\
 Contact			&& \sout{+36XX XXXX XXX}, \sout{XXX@XXXX.hu}	& \\
 Nationality		&& Hungarian					& \\
-Education		&& master of engineering in information technology, & \\
-			&& graduated at the University of Pannonia, Hungary & \\
+Education		&& \href%
+			   {http://github.com/enadam/thesis/raw/master/thesis.pdf}%
+			   {master of engineering in information technology}, & \\
+%			&& graduated at the University of Pannonia, Hungary & \\
 			&& comprehensive background in mathematics	& \\
 Specialization		&& Linux/Unix, networking, security, development tools & \\
-Language skills		&& advanced level English			& \\
-LinkedIn profile	&& \url{http://www.linkedin.com/pub/adam-endrodi/65/10/34}
-			 & \\
+Experience		&& embedded, telecommunications, system administration & \\
+Language skills		&& advanced level English and some Finnish	& \\
+LinkedIn profile	&& \url{http://www.linkedin.com/in/adam-endrodi}
+			 & \includegraphics*[scale=0.23,viewport=0 0 400 1,clip=false]{me} \\
 Twitter feed		&& \href{http://twitter.com/NoSuchNetwork}{@NoSuchNetwork}
 			 &  \\
 Code repository		&& \href{http://github.com/enadam?tab=repositories}%
 			        {\nolinkurl{http://github.com/enadam}}
-			 & \includegraphics*[scale=0.2,viewport=0 0 400 1,clip=false]{me} \\
+			 & \\
 \end{tabularx}
 
 \section{Strengths}
 
-\begin{minipage}[b]{0.815\textwidth}
+\begin{minipage}[b]{0.82\textwidth}
 \begin{compressedItemize}
 \item	life cycle- and process-wide understanding of software engineering
-\item	>12 years of C, C++, Perl, and Linux/Unix up from the foundations
+\item	>15 years of C, C++, Perl, and Linux/Unix up from the foundations
 \item	experience in a broad variety of domains of information technology
-\item	top priorities are quality, reliability and maintainability
-\item	reviewing, testing, tracing, profiling, debugging
-\item	strong emphasis on scripting and automation
-\item	cooperative architecture and software design
+\item	top priorities are code quality, reliability and maintainability
+\item	reviewing, testing, profiling, debugging, remote troubleshooting
+\item	extensive use of scripting and automation
+\item	supportive collaboration with designers, testers and managers
 \end{compressedItemize}
 \end{minipage}
-\parbox[t]{0.16\textwidth}{\includegraphics[scale=0.65,clip=false]{qrcode}}
+\parbox[t]{0.18\textwidth}{\includegraphics[scale=0.28,clip=false]{qrcode}}
 
-\section{In a Nutshell}
-
-\subsection*{Experience}
+\section{Experience}
 
 % high quality typesetting
 % efficient interpretation of standards and references
 % scientific research
+% tracing, profiling
+% interprocess communication
+% concurrency and reentrancy
+% portability and compatibility
+% genetic algorithms
+% X11 window and composition managers
 \begin{multicols}{3}
 \begin{compressedItemize}
 \item	Unix systems programming
-\item	kernel programming
+\item	kernel-space programming
 \item	network programming
-\item	information and web security
-\item	safe, secure \& resilient coding
-\item	secure system administration
-\item	database administration
-\columnbreak
-\item	creating development tools
-\item	developing parsers/interpreters
-\item	understanding of the C tool\-chain and dynamic linking
-\item	tracing, profiling, automated unit and functional testing
+\item	databases \& their operation
+\item	distributed systems and HA
 \item	constrained environments
+\item	virtualization
 \columnbreak
-\item	distributed systems,
-	virtual computing,
-	high availability
-\item	interprocess communication
-\item	concurrency and reentrancy
-\item	portability and compatibility
-\item	writing accurate yet readable \\
+\item	IT security and cryptography
+\item	OS \& applications hardening
+\item	safe and resilient coding
+\item	multithreading complications
+\item	functional programming
+\item	understanding of the C tool\-chain and dynamic linking
+\columnbreak
+\item	CLI, API and protocol design
+\item	parsers and interpreters
+\item	creating development tools
+\item	test automation and CI
+\item	writing accurate yet readable
 	technical documentation
+\item	mentoring colleagues, scrum
 \end{compressedItemize}
 \end{multicols}
 
-\subsection*{Keywords}
+\section{Keywords}
 
 \begin{multicols}{2}
 \begin{compressedItemize}
 \item	C, C++, assembly, ELF, yacc, \TeX
-\item	Perl, Perl XS, Python, Python-C
+\item	Perl, Perl XS, Python, Python-C, Lua
 \item	regexps, advanced shell scripting
-\item	glib, STL, Qt, D-BUS, genetic algorithms
-\item	gcc, gdb, autotools, Debian packaging
-\item	X11, window and composition managers
+\item	gcc, gdb, STL, Qt, glib, GTK
+\item	autotools, CMake, Debian/RPM packaging
+\item	git, Subversion, Bugzilla, Jenkins
 \columnbreak
-\item	scrum, git, Subversion, Bugzilla, Jenkins
 \item	SQL, PostgreSQL, MySQL, SQLite
-\item	XML, RPC, REST, SSL, PKI, X.509
-\item	IPv4/IPv6, routing, firewalls, mailing, ssh
-\item	SCTP, DNS, LDAP, HTTP(S), FTP, SIP
-\item	LXC, Docker, IaaS, vCloud, OpenStack
+\item	etcd, Redis, Couchbase,
+	\href{http://www.tail-f.com/confd-netconf-server}{ConfD}, YANG
+\item	XML, REST,
+	\href{http://en.wikipedia.org/wiki/OpenAPI_Specification}{OpenAPI},
+	SSL, PKI, X.509
+\item	IPv4/IPv6, routing, netfilter, Postfix, ssh
+\item	\href{http://en.wikipedia.org/wiki/SCTP}{SCTP}, DNS, LDAP, HTTP,
+	iSCSI, \href{http://tools.ietf.org/html/rfc6733}{Diameter}
+\item	Linux namespaces and containers, Docker
 \end{compressedItemize}
 \end{multicols}
 
-\subsection*{Employment History}
+\section{Employment History}
 
 \begin{compressedItemize}
-\item	\href{http://nsn.com}{Nokia Networks}
-	(formally Nokia Solutions and Networks,
-	formerly Nokia Siemens Networks) \\
-	\textbf{2012/12--present}: \textit{senior software engineer}
-	in the Linux Team of the Mobile Broadband \\ organization unit
-\item	\href{http://balabit.com}{BalaBit IT Security}, the producer of
-	\href{http://www.balabit.com/network-security/syslog-ng/opensource-logging-system}{\texttt{syslog-ng}} and the
-	\href{http://www.balabit.com/network-security/zorp-gpl}{\texttt{Zorp}}
-	firewall \\
-	\textbf{2012/07--2012/12}:
+\item	\hypertarget{TAS}{\textbf{2012/12--present}}: % specialist?
+	\href{http://networks.nokia.com}{Nokia Networks}, in the
+	\href{http://www.nokia.com/en_int/about-us/who-we-are/our-businesses/mobile-networks}{Mobile Networks} business group of Nokia Corporation \\
+	\textit{senior software engineer} of the Linux Team working on the
+	\href{http://networks.nokia.com/products/open-telecom-application-server-tas}{Open Telecom Application Server} (TAS), a VoLTE solution component
+\item	\textbf{2012/07--2012/12}:
+	\href{http://www.balabit.com/solutions/business}{BalaBit IT Security},
+	the creator of \href{http://www.balabit.com/network-security/syslog-ng/opensource-logging-system}{\texttt{syslog-ng}} and the
+	\href{http://www.balabit.com/network-security/zorp-gpl}%
+	{\texttt{Zorp}} firewall \\
 	\textit{$3^{\textrm{\small rd}}$ level support engineer}
-\item	\hypertarget{MeeGo}{\href{http://www.collabora.com}{Collabora Ltd.}},
+\item	\hypertarget{MeeGo}{\textbf{2010/09--2011/09}}:
+	\href{http://www.collabora.com/about-us}{Collabora Ltd.},
 	the UK/Canada-based open source company \\
-	\textbf{2010/09--2011/09}: \textit{consultant software engineer}
-	working on-site at Nokia's
-	\href{http://en.wikipedia.org/wiki/MeeGo}{MeeGo Devices} \\
-	(formerly Maemo Software) in Helsinki, Finland
-\item	\hypertarget{Maemo}{Blum Software Engineering LLC} (defunct) \\
-	\textbf{2007/09--2011/09}: \textit{software developer} working on-site
-	at Nokia's \href{http://maemo.org}{Maemo Software}
+	\textit{consultant software engineer} working on
+	\href{http://en.wikipedia.org/wiki/MeeGo}{MeeGo}, the operating system
+	of the Nokia \href{http://en.wikipedia.org/wiki/Nokia_N9}{N9} and
+	\href{http://en.wikipedia.org/wiki/Nokia_N950}{N950} smartphones
 	in Helsinki, Finland
+\item	\hypertarget{Maemo}{\textbf{2007/09--2011/09}}:
+	Blum Software Engineering LLC (defunct) \\
+	\textit{software developer} working on \href{http://maemo.org}{Maemo},
+	the operating system of the Nokia
+	\href{http://maemo.org/intro/maemo_history}{N900} smartphone
+	in Helsinki
 \end{compressedItemize}
 
-\subsection*{Presently}
-
-I'm working in the telco industry at the Budapest Technology Center of
-Nokia Networks as a member of the Linux Team.  My responsibilities are
-concentrated around the \href{http://networks.nokia.com/portfolio/products/ip-multimedia-subsystem-ims-core/open-tas}{Open TAS} product, a 4G mobile softswitch:
+\subsection*{Present Roles}
 
 \begin{compressedItemize}
-\item	developer and primary maintainer of the
+\item	primary developer of the command line interface for
+	\hyperlink{TAS}{TAS} ($\approx 10{,}000$ LoC)
+\item	main author and maintainer of the
 	\href{http://tools.ietf.org/html/rfc6733}{Diameter} load balancer
-%\item	I can also debug and fix the M3UA load balancer and the XCAP server
+	($\approx 22{,}500$ LoC)
 \item	reviewer of specifications, feature implementations and patches
 \item	written many pre- and post-deployment scripts and utilities
+	($\approx 18{,}000$ LoC)
 \item	created lots of development tools for my and my team's benefit
-\item	I'm also giving security advice on threat modelling, hardening,
-	guidelines \\ and on specific vulnerabilities like
-	\href{http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7169}%
-	{Shellshock} and most recently,
-	\href{http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0235}%
-	{GHOST}
-%\item	jenkins
+	($\approx 10{,}000$ LoC)
+\item	giving security advice on threat modelling, hardening, guidelines
+	and on specific vulnerabilities
 \end{compressedItemize}
 
-Lately I've become involved with future development directions of the
-product, assisting the architects to make informed design decisions.
+\subsection*{In the Past}
 
-\medskip
-All my work revolves around Linux and increasingly around virtual computing
-(``cloudification'' of existing offerings), but I'm also familiar with the
-``legacy'' (DX200) platform and hardware.
-
-\subsection*{Previously}
-
-For four years I worked on-site at \hypertarget{gadgets}{Nokia Devices'
-R\&D facilities} on the middleware of the resource-constrained environment
+For four years I worked in Helsinki at \hypertarget{gadgets}{Nokia Devices'
+R\&D facilities} on the
+\href{http://wiki.maemo.org/Documentation/Maemo_5_Developer_Guide/Architecture/UI_Framework#hildon-desktop}{compositing window manager} and the
+\href{http://wiki.maemo.org/Documentation/Maemo_5_Developer_Guide/Using_Multimedia_Components/Media_Application_Framework_(MAFW)}{media application framework}
 of the Linux-based Nokia \href{http://maemo.org/intro/maemo_history}{N900}
 and \href{http://en.wikipedia.org/wiki/Nokia_N9}{N9} smartphones.
 
 \medskip
 After that I joined BalaBit IT Security as $3^{\textrm{\small rd}}$ level
-support engineer, where I responded to customer problems with the products
-of the company (application level proxies and system operators auditing
-software) and fixing tricky bugs in them.  I also helped the support team
-migrating to the \href{http://www.kayako.com}{Kayako} ticketing system
-by customizing and enhancing it to match and exceed the retired system's
+support engineer, where I triaged customer problems and actually fixed
+tricky bugs in the products of the company.  I also helped the support
+team adopt the \href{http://www.kayako.com}{Kayako} ticketing system by
+customizing and enhancing it to match and exceed the retired system's
 capabilities.
 
-\section{Past Projects (selection)}
+\section{Some Older Projects}
 
-\Label{Project name}: \hypertarget{mcompositor}{\href{http://meego.gitorious.org/meegotouch/meegotouch-compositor}{\texttt{mcompositor}}}\hfill
-\hyperlink{MeeGo}{MeeGo Devices} \Label{2010 Sept--2011 Sept}\par\medskip
-\Label{Description}: Development of the composition and window manager of
-\hyperlink{gadgets}{N9} (Harmattan program).  This software is responsible
-for the user-interaction of the top-level UI elements, and also coordinates
-between the different applications and background services.  Its performance
-and reliability were critical in the device's user experience.  It was written
-in \Yell{C++} with the \Yell{Qt} toolkit and \Yell{OpenGL} backend, and the
-development was managed via \Yell{scrum}.  Its \Yell{automated functional
-tests} were written in \Yell{Python}.\par\medskip
-\Label{Duties}: feature enhancements, user-interaction improvements,
-debugging internal problems, debugging software interaction problems,
-optimization, refactoring.  For a while I was responsible for releasing
-the software for system integration, ensuring that outstanding issues
-are fixed in the release.  I also worked with the \Yell{Toolkit} and
-\Yell{Graphical adaptation} teams when necessity arose.
-
-\midline\par
-\Label{Project name}: \href{http://maemo.gitorious.org/fremantle-hildon-desktop/hildon-desktop}{\texttt{hildon-desktop}}\hfill
-\hyperlink{Maemo}{Maemo Software} \Label{2008 Sept--2010 Aug}\par\medskip
-\Label{Description}: This was the predecessor of \hyperlink{mcompositor}%
-{\texttt{mcompositor}}, developed for the \hyperlink{gadgets}{N900}
-(Fremantle program).  It used different technologies (written in \Yell{C}
-and \Yell{Clutter}, the high-level \Yell{OpenGL} library), and had more
-sub-components, many of which I was involved with (eg.
-\href{http://www.libsdl.org}{SDL}).\par\medskip
-\Label{Duties}: I wrote the \Yell{task switcher}, implemented the
-\Yell{portrait mode}, worked on the desktop notifications and on
-the visual transition effects of various GUI elements.  I maintained
-a healthy and bidirectional contact with our UI designers.  During
-both this and the \hyperlink{mcompositor}{\texttt{mcompositor}}
-projects I wrote many \Yell{automated tests} for specific, hard
-to reproduce bugs, which helped their resolution.  I also created
-many other \Yell{development tools}, which were useful in bug hunting.
-They are \href{http://github.com/enadam?tab=repositories}{public} now,
-and even today I make use some of them.
-
-\midline\par
-\Label{Project name}: \href{http://wiki.maemo.org/Documentation/Maemo_5_Developer_Guide/Using_Multimedia_Components/Media_Application_Framework_(MAFW)}{Media Application Framework (MAFW)}\hfill
-\hyperlink{Maemo}{Maemo Software} \Label{2007 Aug--2008 Aug}\par\medskip
-\Label{Description}: Middleware for multimedia applications on the
-\hyperlink{gadgets}{N900}.  It provided an abstraction layer between
-the application and the various content and metadata sources (eg. local
-file system) and playback devices (eg. \Yell{UPnP} or \Yell{gstreamer}).
-It was written in \Yell{C} and was based on \Yell{GObject}.  It was
-designed to be extensible by \Yell{plugins} and for testability it had
-\Yell{Python bindings}.  This was the first team within Maemo Software
-to explore \Yell{scrum} as project management methodology.\par\medskip
-\Label{Duties}: \Yell{reviewed} the predecessor Multimedia Application's
-as well as MAFW's pilot implementation and \Yell{compiled a report} of
-questions and suggestions, conducted the \Yell{security threat analysis}
-of MAFW, worked on the \Yell{Python modules}, on the \Yell{D-BUS message
-passing} layer, and on the \Yell{SQLite} access functions.  Also I introduced
-\Yell{continuous integration} into the project with a heavily tailored
-\Yell{buildbot} installation.
-
-\midline\par
+% Initially the program was Linux-only, but later I ported it to Windows.
 \Label{Project name}: \texttt{MenuGene}\hfill
 \href{http://virt.uni-pannon.hu/index.php/about-the-department}%
 {Univ. of Pannonia, Dept. of Information Systems}
 \Label{2004--2009}\par\medskip
 \Label{Description}: Computer aided nutrition counseling system for experts
-and for the laymen.  The user entered his/her nutrition needs (the amount
-of protein, fat etc.), and the service computed an optimal daily or weekly 
-dietetic menu with a \Yell{genetic algorithm}.  This was a university
-research project, extending to other academic institutions.\par\medskip
-\Label{Duties}: As the main software developer I wrote the service program
+and for the laymen.  The user entered his/her nutrition needs (amount of
+protein, fat etc.) and received an optimal daily or weekly dietetic menu
+computed with a \Yell{genetic algorithm}.  This was a 
+\href{http://github.com/enadam/thesis/raw/master/thesis.pdf}%
+{university research program} involving multiple institutions.\par\medskip
+\Label{Duties}: As the main software developer I wrote the generator engine
 and the underlying libraries in \Yell{C++}.  The service had a simple
-\Yell{PHP} web interface and a \Yell{Perl} GUI.  Some \Yell{development
-tools} in \Yell{C} yielded as well.  Initially the program was Linux-only,
-but later I \Yell{ported} it to Windows.  I also redesigned the data store's
-\Yell{SQL} schema and migrated it from Oracle to \Yell{PostgreSQL}.
+\Yell{PHP} web interface and a \Yell{Perl} GUI.  As by-product some
+\Yell{debugging tools} in \Yell{C} yielded as well.  I also redesigned
+the database schema and migrated it from Oracle to \Yell{PostgreSQL}.
 
 \midline\par
 \Label{Project name}: \texttt{qbot}\hfill
@@ -301,18 +253,77 @@ but later I \Yell{ported} it to Windows.  I also redesigned the data store's
 {Univ. of Pannonia, Dept. of Information Systems}
 \Label{2005--2007}\par\medskip
 \Label{Description}: Automated testing and student performance evaluation
-service designed for a course on computer networking.  The students uploaded
-their C programs which the service compiled and executed in a \texttt{qemu}
-\Yell{virtual machine}.  Then they were placed under \Yell{stress-test} by
-feeding them \Yell{randomized}, \Yell{fuzzy} input sequences.  The responses
-were validated against the specification set out in the assignment.
-The service also featured a web interface through which teachers could
-supervise everyone's activity, students could manage their uploads and
-watch the test execution in real-time.\par\medskip
-\Label{Duties}: I designed and implemented the system from the ground-up
-mostly in \Yell{Perl} and \Yell{Perl XS}, and prepared many assignments,
-each requiring a matching validator program.
+service designed for a course on computer networking.  Students uploaded
+their C programs to be compiled and executed in a \texttt{qemu} \Yell{virtual
+machine}.  There the submissions were placed under \Yell{stress-test} by
+feeding them \Yell{randomized}, \Yell{fuzzy} input sequences.  The behavior
+of the programs was validated against the specification set out in the
+assignment.  Through the web interface teachers could supervise everyone's
+activity, students could manage their uploads and watch the test execution
+in real-time.
+\par\medskip
+\Label{Duties}: I designed and implemented the system from top to the bottom
+in \Yell{Perl} augmented with \Yell{Perl XS}, and prepared many assignments
+complete with validators.
 
+%\midline\par
+%\Label{Project name}: \hypertarget{mcompositor}{\href{http://github.com/nemomobile-graveyard/mcompositor}{\texttt{mcompositor}}}\hfill
+%\hyperlink{MeeGo}{MeeGo Devices} \Label{2010 Sept--2011 Sept}\par\medskip
+%\Label{Description}: Development of the composition and window manager of
+%\hyperlink{gadgets}{N9} (Harmattan program).  This software is responsible
+%for the user-interaction of the top-level UI elements, and also coordinates
+%between the different applications and background services.  Its performance
+%and reliability were critical in the device's user experience.  It was written
+%in \Yell{C++} with the \Yell{Qt} toolkit and \Yell{OpenGL} backend, and the
+%development was managed via \Yell{scrum}.  Its \Yell{automated functional
+%tests} were written in \Yell{Python}.\par\medskip
+%\Label{Duties}: feature enhancements, user-interaction improvements,
+%debugging internal problems, debugging software interaction problems,
+%optimization, refactoring.  For a while I was responsible for releasing
+%the software for system integration, ensuring that outstanding issues
+%are fixed in the release.  I also worked with the \Yell{Toolkit} and
+%\Yell{Graphical adaptation} teams when necessity arose.
+%
+%\midline\par
+%\Label{Project name}:
+%\href{http://github.com/Cordia/hildon-desktop}{\texttt{hildon-desktop}}\hfill
+%\hyperlink{Maemo}{Maemo Software} \Label{2008 Sept--2010 Aug}\par\medskip
+%\Label{Description}: This was the predecessor of \hyperlink{mcompositor}%
+%{\texttt{mcompositor}}, developed for the \hyperlink{gadgets}{N900}
+%(Fremantle program).  It used different technologies (written in \Yell{C}
+%and \Yell{Clutter}, the high-level \Yell{OpenGL} library), and had more
+%sub-components, many of which I was involved with (eg.
+%\href{http://www.libsdl.org}{SDL}).\par\medskip
+%\Label{Duties}: I wrote the \Yell{task switcher}, implemented the
+%\Yell{portrait mode}, worked on the desktop notifications and on
+%the visual transition effects of various GUI elements.  I maintained
+%a healthy and bidirectional contact with our UI designers.  During
+%both this and the \hyperlink{mcompositor}{\texttt{mcompositor}}
+%projects I wrote many \Yell{automated tests} for specific, hard
+%to reproduce bugs, which helped their resolution.  I also created
+%many other \Yell{development tools}, which were useful in bug hunting.
+%They are \href{http://github.com/enadam?tab=repositories}{public} now,
+%and even today I make use some of them.
+%
+%\midline\par
+%\Label{Project name}: \href{http://wiki.maemo.org/Documentation/Maemo_5_Developer_Guide/Using_Multimedia_Components/Media_Application_Framework_(MAFW)}{Media Application Framework (MAFW)}\hfill
+%\hyperlink{Maemo}{Maemo Software} \Label{2007 Aug--2008 Aug}\par\medskip
+%\Label{Description}: Middleware for multimedia applications on the
+%\hyperlink{gadgets}{N900}.  It provided an abstraction layer between
+%the application and the various content and metadata sources (eg. local
+%file system) and playback devices (eg. \Yell{UPnP} or \Yell{gstreamer}).
+%It was written in \Yell{C} and was based on \Yell{GObject}.  It was
+%designed to be extensible by \Yell{plugins} and for testability it had
+%\Yell{Python bindings}.  This was the first team within Maemo Software
+%to explore \Yell{scrum} as project management methodology.\par\medskip
+%\Label{Duties}: \Yell{reviewed} the predecessor Multimedia Application's
+%as well as MAFW's pilot implementation and \Yell{compiled a report} of
+%questions and suggestions, conducted the \Yell{security threat analysis}
+%of MAFW, worked on the \Yell{Python modules}, on the \Yell{D-BUS message
+%passing} layer, and on the \Yell{SQLite} access functions.  Also I introduced
+%\Yell{continuous integration} into the project with a heavily tailored
+%\Yell{buildbot} installation.
+%
 %\midline\par
 %\Label{Project name}: system administration at the Central Student's Hostel
 %of the Univ. of Pannonia\hfill
@@ -347,31 +358,29 @@ each requiring a matching validator program.
 
 \section{Personal Properties}
 
-% argumentative?
+%\item	willing to study and research
+%\item	motivated by fun
 \begin{multicols}{2}
 \begin{compressedItemize}
-\item	code readability and reliability \\ are of highest concerns
-\item	tests \textit{before} making a commit
-\item	respects colleagues' code and decisions
-\item	thinks ahead
-\item	learns from mistakes
-\item	willing to study and research
+\item	code readability and reliability are precious
+\item	tests \textit{before} making or merging a commit
+\item	accepts others' style and respects their decisions
+\item	thinks ahead and learns from mistakes
+\item	hungry for knowledge and experience
+\item	nothing is totally boring or useless
 \columnbreak
-\item	can-do attitude
-\item	patient \& emphatic
+\item	\textit{let's do it} attitude
+\item	patient \& listening
 \item	determined \& disciplined
 \item	independent \& passionate
 \item	no compromise if possible, \\ but ready for it if necessary
-\item	motivated by fun
 \end{compressedItemize}
 \end{multicols}
 
-%\section{Personal Interests}
 \medskip
 
-Besides continuous self-improvement I'm interested in language,
-interpersonal communication, experimental psychology, social issues
-and in the gender problem.
+Beside professional self-improvement I'm interested in language, experimental
+psychology, social discrepancies and in the gender problem.
 
 \center\itshape\today
 
